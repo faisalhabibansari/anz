@@ -1,6 +1,6 @@
 # wholesale
 
-### To Run
+### Run
 `mvn spring-boot:run -Dspring-boot.run.profiles=local`
 
 ### Account API
