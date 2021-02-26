@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.wholesale.anz.api.config.ApplicationProperties",
+      "sourceType": "com.wholesale.anz.api.config.ApplicationProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

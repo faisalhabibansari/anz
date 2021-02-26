@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Account.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">wholesale</a> &gt; <a href="index.source.html" class="el_package">com.wholesale.anz.api.entities</a> &gt; <span class="el_source">Account.java</span></div><h1>Account.java</h1><pre class="source lang-java linenums">package com.wholesale.anz.api.entities;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+//Account Entity
+@Entity
+@Table(name = &quot;account&quot;)
+@Getter
+<span class="nc" id="L23">@Setter</span>
+<span class="nc" id="L24">@NoArgsConstructor</span>
+<span class="fc" id="L25">@AllArgsConstructor</span>
+public class Account {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+<span class="fc" id="L30">    private Long id;</span>
+
+    @Column(name = &quot;accountNumber&quot;, nullable = false)
+<span class="fc" id="L33">    private String accountNumber;</span>
+
+    @Column(name = &quot;accountName&quot;, nullable = false)
+<span class="fc" id="L36">    private String accountName;</span>
+
+    @Column(name = &quot;accountType&quot;, nullable = false)
+<span class="fc" id="L39">    private String accountType;</span>
+
+    @Column(name = &quot;balanceDate&quot;, nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
+<span class="fc" id="L43">    private Date balanceDate;</span>
+
+    @Column(name = &quot;currency&quot;, nullable = false)
+<span class="fc" id="L46">    private String currency;</span>
+
+    @Column(name = &quot;openingAvailableBalance&quot;, nullable = false)
+<span class="fc" id="L49">    private String openingBalance;</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
