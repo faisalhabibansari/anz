@@ -1,12 +1,14 @@
 # wholesale
 
+### To Run
+`mvn spring-boot:run -Dspring-boot.run.profiles=local`
+
+### Account API
+`http://localhost:8080/api/accounts`
+
+### AccountTransaction API
+`http://localhost:8080/api/transactions/{accountNumber}`
+
 ### Run tests
-`$ ./mvnw clean verify`
-
-### Run locally
-`$ ./mvnw docker:start spring-boot:run`
-
-
-### Useful Links
-* Swagger UI: http://localhost:8080/swagger-ui/index.html
-* Actuator Endpoint: http://localhost:8080/actuator
+`mvn -Dtest=AccountControllerTest test`
+`mvn -Dtest=AccountTrabsactionControllerTest test`
