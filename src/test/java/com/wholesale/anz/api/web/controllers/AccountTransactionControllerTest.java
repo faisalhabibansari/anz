@@ -21,7 +21,6 @@ import org.zalando.problem.ProblemModule;
 import org.zalando.problem.violations.ConstraintViolationProblemModule;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wholesale.anz.api.entities.Account;
 import com.wholesale.anz.api.entities.AccountTransaction;
 import com.wholesale.anz.api.services.AccountTransactionService;
 
